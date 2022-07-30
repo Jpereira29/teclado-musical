@@ -14,54 +14,44 @@ export function Keyboard() {
     const handleKeyDown = (e: KeyboardEvent) => {
         switch (e.code) {
             case 'KeyQ':
-                key.sound('sounds/c3.mp3')
+                key.sound('sounds/c3.mp3', 'DO')
                 key.modeStyleKey('q')
-                key.setNote('DO')
                 break
             case 'KeyW':
-                key.sound('sounds/d3.mp3')
+                key.sound('sounds/d3.mp3', 'RE')
                 key.modeStyleKey('w')
-                key.setNote('RE')
                 break
             case 'KeyE':
-                key.sound('sounds/e3.mp3')
+                key.sound('sounds/e3.mp3', 'MI')
                 key.modeStyleKey('e')
-                key.setNote('MI')
                 break
             case 'KeyR':
-                key.sound('sounds/f3.mp3')
+                key.sound('sounds/f3.mp3', 'FA')
                 key.modeStyleKey('r')
-                key.setNote('FA')
                 break
             case 'KeyT':
-                key.sound('sounds/g3.mp3')
+                key.sound('sounds/g3.mp3', 'SOL')
                 key.modeStyleKey('t')
-                key.setNote('SOL')
                 break
             case 'KeyY':
-                key.sound('sounds/a4.mp3')
+                key.sound('sounds/a4.mp3', 'LA')
                 key.modeStyleKey('y')
-                key.setNote('LA')
                 break
             case 'KeyU':
-                key.sound('sounds/b4.mp3')
+                key.sound('sounds/b4.mp3', 'SI')
                 key.modeStyleKey('u')
-                key.setNote('SI')
                 break
             case 'KeyI':
-                key.sound('sounds/c4.mp3')
+                key.sound('sounds/c4.mp3', 'DO')
                 key.modeStyleKey('i')
-                key.setNote('DO')
                 break
             case 'KeyO':
-                key.sound('sounds/d4.mp3')
+                key.sound('sounds/d4.mp3', 'RE')
                 key.modeStyleKey('o')
-                key.setNote('RE')
                 break
             case 'KeyP':
-                key.sound('sounds/e4.mp3')
+                key.sound('sounds/e4.mp3', 'MI')
                 key.modeStyleKey('p')
-                key.setNote('MI')
                 break
         }
     }
@@ -80,7 +70,6 @@ export function Keyboard() {
                 />
 
                 <C.Chromatic
-                    onClick={() => key.sound('sounds/piano/C3v10.ogg')}
                 />
 
                 <C.Key

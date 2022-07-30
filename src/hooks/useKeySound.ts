@@ -3,14 +3,13 @@ import { useState } from "react"
 export function useKey() {
     const [note, setNote] = useState('')
 
-    function sound(local: string, nt?: string) {
-        setNote(nt!)
+    function sound(local: string, nt: string) {
+        setNote(nt)
         const note = new Audio(local)
         note.volume = 1
         note.play()
     }
     const styleKey = { bg: '#FFF', height: '200px' }
-
 
     function modeStyleKey(id: string) {
         let key = document.getElementById(id)
@@ -28,6 +27,5 @@ export function useKey() {
         modeStyleKey,
         styleKey,
         note,
-        setNote
     }
 }
