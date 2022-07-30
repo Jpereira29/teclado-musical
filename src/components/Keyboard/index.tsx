@@ -8,8 +8,11 @@ export function Keyboard() {
     const key = useKey()
 
     useEffect(() => {
-        window.addEventListener('keydown', handleKeyDown)
-    }, [])
+        document.addEventListener('keydown', handleKeyDown)
+        return ()=> {
+            document.removeEventListener('keydown', handleKeyDown)
+        }
+    })
 
     const handleKeyDown = (e: KeyboardEvent) => {
         switch (e.code) {
