@@ -67,7 +67,7 @@ export function Keyboard() {
                 <div>
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/c3.mp3', 'DO')
+                    onMouseDown={() => key.sound('sounds/c3.mp3', 'DO')
                 }
                     id='q'
                 />
@@ -77,7 +77,7 @@ export function Keyboard() {
 
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/d3.mp3', 'RE')}
+                    onMouseDown={() => key.sound('sounds/d3.mp3', 'RE')}
                     id='w'
                 />
 
@@ -85,13 +85,13 @@ export function Keyboard() {
 
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/e3.mp3', 'MI')}
+                    onMouseDown={() => key.sound('sounds/e3.mp3', 'MI')}
                     id='e'
                 />
 
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/f3.mp3', 'FA')}
+                    onMouseDown={() => key.sound('sounds/f3.mp3', 'FA')}
                     id='r'
                 />
 
@@ -99,7 +99,7 @@ export function Keyboard() {
 
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/g3.mp3', 'SOL')}
+                    onMouseDown={() => key.sound('sounds/g3.mp3', 'SOL')}
                     id='t'
                 />
 
@@ -107,7 +107,7 @@ export function Keyboard() {
 
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/a4.mp3', 'LA')}
+                    onMouseDown={() => key.sound('sounds/a4.mp3', 'LA')}
                     id='y'
                 />
 
@@ -115,13 +115,13 @@ export function Keyboard() {
 
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/b4.mp3', 'SI')}
+                    onMouseDown={() => key.sound('sounds/b4.mp3', 'SI')}
                     id='u'
                 />
 
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/c4.mp3', 'DO')}
+                    onMouseDown={() => key.sound('sounds/c4.mp3', 'DO')}
                     id='i'
                 />
 
@@ -129,7 +129,7 @@ export function Keyboard() {
 
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/d4.mp3', 'RE')}
+                    onMouseDown={() => key.sound('sounds/d4.mp3', 'RE')}
                     id='o'
                 />
 
@@ -137,7 +137,7 @@ export function Keyboard() {
 
                 <C.Key
                     styleKey={key.styleKey}
-                    onClick={() => key.sound('sounds/e4.mp3', 'MI')}
+                    onMouseDown={() => key.sound('sounds/e4.mp3', 'MI')}
                     id='p'
                 />
                 </div>
